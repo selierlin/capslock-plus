@@ -732,6 +732,16 @@ return
 #If
 
 
+;------------------------------------------------
+;任务栏 滚动鼠标滚轮调节音量
+#if mouseisover("ahk_class Shell_TrayWnd")
+wheelup::Volume_Up
+WheelDown::Volume_Down
+return
+mouseisover(wintitle){
+  MouseGetPos,,,win
+  return WinExist(wintitle . " ahk_id " . win)
+}
 
 
 GuiClose:

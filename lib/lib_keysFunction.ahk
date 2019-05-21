@@ -162,6 +162,20 @@ SendInput, {Enter}
 Return
 }
 
+;删除单词
+keyFunc_deleteWord(){
+    SendInput,^{backspace}
+    return
+}
+
+
+;执行Notepad程序
+keyFunc_runNotepad(){
+    Run C:\Windows\system32\notepad.exe
+    return
+}
+
+
 ;双字符
 keyFunc_doubleChar(char1,char2:=""){
     if(char2=="")

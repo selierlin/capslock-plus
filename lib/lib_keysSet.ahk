@@ -9,7 +9,7 @@ global keyset:=CLSets.Keys
 ;  }
     
 if(!keyset.caps_a)
-    keyset.caps_a:="keyFunc_moveWordLeft"
+    keyset.caps_a:="keyFunc_deleteWord"
 if(!keyset.caps_b)
     keyset.caps_b:="keyFunc_moveDown(5)"
 if(!keyset.caps_c)
@@ -180,7 +180,7 @@ if(!keyset.caps_lalt_r)
 if(!keyset.caps_lalt_s)
     keyset.caps_lalt_s:="keyFunc_activateSideWin(l)"
 if(!keyset.caps_lalt_t)
-    keyset.caps_lalt_t:="keyFunc_doNothing"
+    keyset.caps_lalt_t:="keyFunc_runNotepad"
 if(!keyset.caps_lalt_u)
     keyset.caps_lalt_u:="keyFunc_doNothing"
 if(!keyset.caps_lalt_v)

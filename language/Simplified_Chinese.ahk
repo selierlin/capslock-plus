@@ -286,8 +286,9 @@ apiKey=0123456789
 
 [Keys]
 
-;Capslock+A -> 光标向左移动一个单词
-caps_a=keyFunc_moveWordLeft
+;Capslock+A -> 光标向左[移动]删除一个单词
+;caps_a=keyFunc_moveWordLeft
+caps_a=keyFunc_deleteWord
 
 ;Capslock+B -> 光标向下移动 5 行
 caps_b=keyFunc_moveDown(5)
@@ -415,7 +416,7 @@ caps_backslash=keyFunc_doNothing
 caps_semicolon=keyFunc_end
 
 ;Capslock+' -> 左右双引号
-caps_quote=keyFunc_keyFunc_doubleChar("""","""")
+caps_quote=keyFunc_doubleChar("""","""")
 
 ;换行——无论光标是否在行末
 caps_enter=keyFunc_enterWherever
@@ -518,7 +519,7 @@ caps_lalt_r=keyFunc_tabNext
 ;激活位于当前窗口左边的窗口
 caps_lalt_s=keyFunc_activateSideWin(l)
 
-caps_lalt_t=keyFunc_doNothing
+caps_lalt_t=keyFunc_runNotepad
 
 caps_lalt_u=keyFunc_doNothing
 
